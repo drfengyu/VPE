@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    # 如果你想要进一步定义触发、路径以及其他内容，请检阅 Github Actions 文档
-    # https://docs.github.com/zh/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   build:
@@ -15,15 +13,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: yarn
+          cache: npm # 修改为 npm 缓存
 
       - name: 安装依赖
-        run: yarn install --frozen-lockfile
+        run: npm install # 使用 npm 安装依赖
+      
       - name: 构建网站
-        run: yarn build
+        run: npm run build # 使用 npm 构建网站
 
       - name: 上传构建制品
         uses: actions/upload-pages-artifact@v3
@@ -36,8 +36,8 @@ jobs:
 
     # 给予 GITHUB_TOKEN 进行 Pages 部署所必须的权限
     permissions:
-      pages: write # 以部署到 Pages
-      id-token: write # 以验证部署来自恰当的源
+      pages: write
+      id-token: write
 
     # 部署到 Github Pages 环境
     environment:
