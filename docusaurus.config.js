@@ -16,12 +16,12 @@ const config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Visual-Project-Evaluation/',
+  baseUrl: '/VPE/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'drfengyu', // Usually your GitHub org/user name.
-  projectName: 'Visual-Project-Evaluation', // Usually your repo name.
+  projectName: 'VPE', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
