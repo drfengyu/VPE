@@ -45,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/drfengyu/Visual-Project-Evaluation//tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/drfengyu/vpe/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/drfengyu/Visual-Project-Evaluation/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/drfengyu/vpe/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/drfengyu/Visual-Project-Evaluation',
+            href: 'https://github.com/drfengyu/vpe',
             label: 'GitHub',
             position: 'right',
           },
@@ -133,7 +133,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/drfengyu/Visual-Project-Evaluation',
+                href: 'https://github.com/drfengyu/vpe',
               },
             ],
           },
